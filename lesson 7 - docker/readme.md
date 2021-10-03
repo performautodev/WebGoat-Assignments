@@ -100,4 +100,9 @@ Leaving passwords in docker images is not so secure
 
 
 
-Tutorial on YouTube: 
+
+   Video tutorial on YouTube : 
+   
+   [![Video tutorial](https://img.youtube.com/vi/1qxr9ZuAZVE/0.jpg)](https://www.youtube.com/watch?v=1qxr9ZuAZVE)
+   
+   https://youtu.be/1qxr9ZuAZVE

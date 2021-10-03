@@ -9,7 +9,7 @@
 2) get **public key** from **private one** : 
 
    ```shell
-   openssl rsa -in private.key -pubout > key.public
+   openssl rsa -in private.key -pubout > public.key
    ```
 
    
@@ -17,15 +17,15 @@
 3) get **modulus** key from **public key**
 
    ```shell
-   openssl rsa -in key.public -pubin -modulus -noout > modulus.key
+   openssl rsa -in public.key -pubin -modulus -noout > modulus.key
    ```
 
 
 
-4. get **sha256 ** key from **modulus**
+4. get **sha256** key from **modulus**
 
    ```shell
-   echo -n "modulus.key content as test" | openssl dgst -sign t.pub -sha256 -out sign.sha256
+   echo -n "modulus.key content as text" | openssl dgst -sign private.key -sha256 -out sign.sha256
    ```
    
    
@@ -37,3 +37,8 @@
    ```
    
    Video tutorial on YouTube : 
+   
+   [![Video tutorial](https://img.youtube.com/vi/5zVK4HvJJgw/0.jpg)](https://www.youtube.com/watch?v=5zVK4HvJJgw)
+   
+   https://youtu.be/5zVK4HvJJgw
+

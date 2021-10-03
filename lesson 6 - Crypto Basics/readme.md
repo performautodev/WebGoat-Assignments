@@ -22,10 +22,10 @@
 
 
 
-4. get **sha256 ** key from **modulus**
+4. get **sha256** key from **modulus**
 
    ```shell
-   echo -n "modulus.key content as text" | openssl dgst -sign public.key -sha256 -out sign.sha256
+   echo -n "modulus.key content as text" | openssl dgst -sign private.key -sha256 -out sign.sha256
    ```
    
    
